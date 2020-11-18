@@ -1,5 +1,5 @@
 # Open Discover Platform Case Study
-Open Discover Platform is a higher level of document content extraction built upon the Open Discover SDK for .NET. This repository will show case the following:
+Open Discover Platform is a higher level of document content extraction built upon the Open Discover SDK for .NET. This repository will show case the content extraction processing and storage of the following:
 - using the Open Discover Platform API to process the Enron Microsoft Outlook PST Data Set published by EDRM and ZL Technologies, Inc.  
 - using a powerful document database such as ravendb to store, index, and query the output produced by the Open Discover Platform API.
 We chose the Enron Microsoft Outlook PST Data Set for several reasons:
