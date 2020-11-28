@@ -4,7 +4,12 @@
   - Using the Open Discover Platform API, which is built upon the Open Discover SDK, to process the Enron Microsoft Outlook PST Data Set published by EDRM and ZL Technologies, Inc.   
   - Using [RAVENDB 5.1](https://ravendb.net/) document database to store, index, and query the output produced by the Open Discover Platform API. RAVENDB 5.1 now allows for text attachments to be indexed; however for this case study extracted from emails and office documents will be stored as a document property and indexed. 
   - Using the above [RAVENDB 5.1](https://ravendb.net/) document database, we will show case:
-  -- of the Enron dataset, summariesquery for all documents with 
+     - Summaries of a document counts, file types, file sizes
+     - Charts of all documents counts by a "SortDate" (SortDate is a date calculated from either document metadata or document file system properties, and it usually represents the date the document owner last modified the document).
+     - Summary of all languages found in all documents in the data set.
+     - Summary of all sensitive items/entities found in all documents in the data set
+     - Full text search using RAVENDB
+     - Searching for all documents that have a specific type of sensitive item (e.g., search for all documents with bank account or IBAN numbers).
 ### We chose the Enron Microsoft Outlook PST Data Set for the following reasons:
 - It is a common benchmark dataset used in eDiscovery/legal/Information Governance industries (mostly for comparing document/attachment counts, de-duplication, and relative processing/indexing speeds)
 - This data set still has, even after rounds of personally identifiable information cleansing, MUCH sensitive item information (PII) such as credit card numbers, social security numbers, IBAN accounts, investment account numbers, driver's licenses, and much more. Since it is an 'old' dataset (~20 years), and it is a publicly available dataset, those effected by the loss of personal information were long ago notified.
