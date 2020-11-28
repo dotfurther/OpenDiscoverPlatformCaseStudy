@@ -14,7 +14,7 @@
 ### We chose the Enron Microsoft Outlook PST Data Set for the following reasons:
 - It is a common benchmark dataset used in eDiscovery/legal/Information Governance industries (mostly for comparing document/attachment counts, de-duplication, and relative processing/indexing speeds)
 - This data set still has, even after rounds of personally identifiable information cleansing, MUCH sensitive item information (PII) such as credit card numbers, social security numbers, IBAN accounts, investment account numbers, driver's licenses, and much more. Since it is an 'old' dataset (~20 years), and it is a publicly available dataset, those effected by the loss of personal information were long ago notified.
-### Open Discover Platform API comes with class DocumentTaskEngine that is used for multi-threaded processing of sets of documents (typically a set is 1000-5000 documents at a time). In this case study, a single instance of DocumentTaskEngine was used to process the Enron dataset. Processing a set of documents includes:
+### Open Discover Platform API comes with class DocumentTaskEngine that is purposed for multi-threaded processing of sets of documents (typically a set is 1000-5000 documents at a time). In this case study, a single instance of DocumentTaskEngine was used to process the Enron dataset. Processing a set of documents includes:
 - Identifying the file format types of each document
 - Hashing the document bytes or content
 - de-NIST-ing the documents (that is comparing each document hash to a ~100M known NIST hash database of common/known files). 
