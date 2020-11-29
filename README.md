@@ -12,7 +12,7 @@
      - Full-text search using RAVENDB
      - Searching for all documents that have a specific type of sensitive item (e.g., search for all documents with a bank account or IBAN numbers).
 ### We chose the Enron Microsoft Outlook PST Data Set for the following reasons:
-- It is a common benchmark dataset used in eDiscovery/legal/Information Governance industries (mostly for comparing document/attachment counts, de-duplication, and relative processing/indexing speeds)
+- It is a common benchmark dataset used in legal/eDiscovery/Information Governance industries (mostly for comparing document/attachment counts, de-duplication, and relative processing/indexing speeds)
 - This data set still has, even after rounds of personally identifiable information cleansing, MUCH sensitive item information (PII) such as credit card numbers, social security numbers, IBAN accounts, investment account numbers, driver's licenses, and much more. Since it is an 'old' dataset (~20 years), and it is a publicly available dataset, those effected by the loss of personal information were long ago notified.
 ### Open Discover Platform API comes with class DocumentTaskEngine that is purposed for multi-threaded processing of sets of documents (typically a set is 1000-5000 documents at a time). In this case study, a single instance of DocumentTaskEngine was used to process the Enron dataset. Processing a set of documents includes:
 - Identifying the file format types of each document
@@ -23,7 +23,11 @@
 - Optionally, identifying sensitive items and entities present in the extracted text. Sensitive items includes social security numbers, credit card numbers, bank account numbers, investment account numbers, IBAN, addresses, phone numbers, driver's license numbers, vehicle identification numbers (VIN), health care member numbers, and more
 - If a document has an attachment or embedded item, then the attachment is also processed through the above steps 
 
-A single instance of DocumentTaskEngine is typically capable of processing 1000+ document sets at 40-60 GB/hour rates* (* rates will be dependent on user hardware).
-Screen shots of a user interface that 'wraps' one DocumentTaskEngine instance, are shown at the end us this page. In addition to the Open Discover Platform API, a 3rd party partner has developed a processing job management system (JMS) that manages distributed DocumentTaskEngine instances (and OCR-ing of images) whether on separate desktops, virtual machines, or Azure Docker containers. If you are in the legal/eDiscovery/information governance industries (or if your company routinely processes large volumes of documents) and are interested in demo-ing the JMS/Open Discover Platform then contact us at https://dotfurther.com/contact-us/.
+A single instance of DocumentTaskEngine is typically capable of processing document sets at 40-60 GB/hour rate* (* rates will be dependent on user hardware). It is very fast at processing documents while also extracting more content than most eDiscovery software (e.g., sensitive item detection and de-NIST-ing while processing).
+Screen shots of the PlatformAPIDemo.exe, a user interface that 'wraps' one DocumentTaskEngine instance, are shown at the end us this case study. The PlatformAPIDemo.exe example application was used to process all the Enron data in this case study. 
+
+The PlatformAPIDemo.exe along with C# examples for bulk inserting into RAVENDB, creating advanced RAVEBDB indexes, creating load files from Platform output, and Lucene indexing Platform output are distributed to companies that demo the Open Discover Platform and SDK. 
+
+In addition to the Open Discover Platform API, a 3rd party partner has developed a processing job management system (JMS) that manages distributed DocumentTaskEngine instances (and OCR worker instances) whether on separate desktops, virtual machines, or Azure Docker containers. If you are in the legal/eDiscovery/information governance industries (or if your company routinely processes large volumes of documents) and are interested in demo-ing the JMS/Open Discover Platform then contact us at https://dotfurther.com/contact-us/.
 
 
