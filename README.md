@@ -31,11 +31,20 @@ In addition to the Open Discover Platform API, a 3rd party partner has developed
 
 ### Lets take a quick look at the content that Open Discover Platform API extracted from the Enron Outlook PST dataset and which got bulk inserted into a RAVEDB document store
 This screen shot shows an email (and its attachments) that were extracted and processed from one of the Enron Outlook PSTs. Note the calculated "SortData", document hashes, and metadata
+
 <img src="Image1.jpg">
+
 Email specific content like all recipients and extra hashes:
+
 <img src="Image2.jpg">
+
 This email screen shot shows a bank account number that was extracted/identified as a "sensitive item":
+
 <img src="image3.jpg">
+
 Some "entities" found in another email:
+
 <img src="image4.jpg">
+
+
 
