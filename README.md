@@ -7,7 +7,7 @@
      - Summaries of a document counts, file types, file sizes
      - Charts of all documents counts by a "SortDate" (SortDate is a date calculated from either document metadata or document file system properties, and it usually represents the date the document owner last modified the document).
      - Summary of all languages found in all documents in the data set.
-     - Summary of all sensitive items/entities found in all documents in the data set
+     - Summary of all supported sensitive items/entities found in all document text/metadata
      - Full-text search using RAVENDB
      - Searching for all documents that have a specific type of sensitive item (e.g., search for all documents with a bank account or IBAN numbers).
      - Many features of an early case assesment (ECA) application
