@@ -30,4 +30,6 @@ The PlatformAPIDemo.exe along with C# examples for bulk inserting into RAVENDB, 
 
 In addition to the Open Discover Platform API, a 3rd party partner has developed a processing job management system (JMS) that manages distributed DocumentTaskEngine instances (and OCR worker instances) whether on separate desktops, virtual machines, or Azure Docker containers. If you are in the legal/eDiscovery/information governance industries (or if your company routinely processes large volumes of documents) and are interested in demo-ing the JMS/Open Discover Platform then contact us at https://dotfurther.com/contact-us/.
 
+### Lets take a quick look at the content that Open Discover Platform API extracted from the Enron Outlook PST dataset and which got bulk inserted into a RAVEDB document store
 
+<img src="Image1.png">
