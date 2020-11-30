@@ -38,61 +38,61 @@ The below screen shot shows an email (and its attachments) that was extracted an
 
 Email specific content like all recipients and extra hashes:
 
-<img src="Image2.jpg">
+<img src="Image2.png">
 
 This processed email screen shot shows a bank account number that was extracted/identified as a "sensitive item" in the email's extracted text (all extracted text and all metadata are scanned for sensitive items):
 
-<img src="image3.jpg">
+<img src="image3.png">
 
 Some "entities" identified in a different email:
 
-<img src="image4.jpg">
+<img src="image4.png">
 
 ### Querying the document store (RAVENDB) with the .NET WPF demo
 
 Some of the 31 RAVENDB indexes that the .NET WPF demo application uses to query the document store (note that there are 37.5 million metadata properties stored in this database in addition to all of the extracted text):
 
-<img src="image5.jpg">
+<img src="image5.png">
 
 The .NET WPF demo application - the screen shot below shows the processing summary of the 189 Microsoft Outlook PST Enron data set (1,221,542 emails and attachments processed in total). Note the file format classification pie chart, summary of specific file format pie chart, and summary of processing results (Ok(Success)/WrongPassword/DataError/etc) pie chart. 
 
-<img src="image6.jpg">
+<img src="image6.png">
 
 File counts by SortDate summary charts:
 
-<img src="image7.jpg">
+<img src="image7.png">
 
 Metadata summary (metadata field name/total number of documents) - 715 known unique metadata field names across all documents and 636 custom (user defined) metadata fields:
 
-<img src="image8.jpg">
+<img src="image8.png">
 
 Sensitive Item/Entity Item Summary for all documents:
 
-<img src="image9.jpg">
+<img src="image9.png">
 
 Summary of all unique URLs found in all documents (URLs from every document may be useful, for example, if a company wants to track down potential malicious url entry points):
 
-<img src="image10.jpg">
+<img src="image10.png">
 
 Summary of all passwords found in all documents. Passwords and usernames are just 2 out of 22 'sensitive item' types supported by the Open Discover SDK/Platform. Password/username credentials in documents can be a security risk, they can also be used to re-process any document that has a processing result of 'WrongPassword' (as employees in the same company often email each other passwords to shared encrypted office documents):
 
-<img src="image11.jpg">
+<img src="image11.png">
 
 Summary of languages detected in the extracted text of the processed documents:
 
-<img src="image12.jpg">
+<img src="image12.png">
 
 Example full-text search query (RAVENDB supports Lucene queries):
 
-<img src="image13.jpg">
+<img src="image13.png">
 
 Example search by SensitiveItemType, in this example we search for all documents that have a sensitive item of type SensitiveItemType.BankAccount:
 
-<img src="image14.jpg">
+<img src="image14.png">
 
 Example search by EntityItemType, in this example we search for all documents that have a entity item of type EntityItemType.PatientNameEntry:
 
-<img src="image15.jpg">
+<img src="image15.png">
 
 ### Summary
 Open Discover Platform output stored in a document database such as RAVENDB can lead to powerful full-text search/eDiscovery/information governance applications with little work. If this demo used a relational database instead of a document database, it would have taken months and not the 2 weeks in time it took the author to develop this proof of concept case study.
