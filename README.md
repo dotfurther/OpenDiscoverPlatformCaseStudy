@@ -48,7 +48,7 @@ Some "entities" identified in a different email:
 
 <img src="image4.jpg">
 
-### Querying the document store (RAVEDB) with the .NET WPF demo
+### Querying the document store (RAVENDB) with the .NET WPF demo
 
 Some of the 31 RAVENDB indexes that the .NET WPF demo application uses to query the document store (note that there are 37.5 million metadata properties stored in this database in addition to all of the extracted text):
 
@@ -74,7 +74,7 @@ Summary of all unique URLs found in all documents:
 
 <img src="image10.jpg">
 
-Summary of all passwords found in all documents (passwords and usernames are just 2 out of 22 'sensitive item' types supported by the Open Discover SDK/Platform). Password/username credentials in doucments can be a security risk, they can also be used to re-process any document that has a processing result of 'WrongPassword' (as employees in the same company often email each other passwords to shared encrypted office documents):
+Summary of all passwords found in all documents (passwords and usernames are just 2 out of 22 'sensitive item' types supported by the Open Discover SDK/Platform). Password/username credentials in documents can be a security risk, they can also be used to re-process any document that has a processing result of 'WrongPassword' (as employees in the same company often email each other passwords to shared encrypted office documents):
 
 <img src="image11.jpg">
 
