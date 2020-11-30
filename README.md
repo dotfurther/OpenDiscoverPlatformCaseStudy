@@ -54,23 +54,43 @@ Some of the 31 RAVENDB indexes that the .NET WPF demo application uses to query 
 
 <img src="image5.jpg">
 
+The .NET WPF demo application, the screen shot below shows the processing summary of the 189 Outlook PST Enron data set (1,221,542 emails and attachments processed). Note the file types by classification pie chart, summary of file types by specific file format pie chart, and summary of processing results (success/wrong password/processing errors/etc) pie chart. 
+
 <img src="image6.jpg">
+
+File counts by SortDate summary charts:
 
 <img src="image7.jpg">
 
+Metadata summary (metadata field name/total number of documents) - 715 known unique metadata field names across all documents and 636 custom (user defined) metadata fields:
+
 <img src="image8.jpg">
+
+Sensitive Item/Entity Item Summary for all documents:
 
 <img src="image9.jpg">
 
+Summary of all unique URLs found in all documents:
+
 <img src="image10.jpg">
+
+Summary of all passwords found in all documents (passwords and users names are a couple of the 22 'sensitive item' types supported by the Open Discover SDK). The identified passwords in the extracted text of all documents can be used to re-process any document that has a processing result of 'WrongPassword':
 
 <img src="image11.jpg">
 
+Summary of languages found in the extracted text of the processed Enron data set:
+
 <img src="image12.jpg">
+
+Example full-text search (extracted text):
 
 <img src="image13.jpg">
 
+Example search by SensitiveItemType, in this example we search for all documents that have a sensitive item of type SensitiveItemType.BankAccount:
+
 <img src="image14.jpg">
+
+Example search by EntityItemType, in this example we search for all documents that have a entity item of type EntityItemType.PatientNameEntry:
 
 <img src="image15.jpg">
 
