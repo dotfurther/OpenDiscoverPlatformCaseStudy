@@ -1,9 +1,9 @@
-# Open Discover Platform Case Study
+# Open Discover® Platform Case Study
 ## Open Discover Platform is a higher level of document content extraction/processing built upon the Open Discover SDK for .NET. 
 ### This repository show cases the following:
   - Using the Open Discover Platform API to process the Enron Microsoft Outlook PST Data Set published by EDRM and ZL Technologies, Inc.   
   - Using a document database to store, index, and query the output produced by the Open Discover Platform API. In the study we use [RAVENDB 5.1](https://ravendb.net/) as our document database. RAVENDB 5.1 now allows for text attachments to be indexed; however, for this case study extracted text will be stored as a document record property and indexed. 
-  - .NET WPF demo application (a C# project available to those that demo Open Discover Platform) that uses custom RAVENDB indexes to query and display:
+  - .NET WPF demo application (a C# application with source code available to those that demo Open Discover Platform) that uses custom RAVENDB indexes to query and display:
      - Summaries of a document counts, file types, file sizes
      - Charts of all documents counts by a "SortDate" (SortDate is a date calculated from either document metadata or document file system properties, and it usually represents the date the document owner last modified the document).
      - Summary of all languages found in all documents in the data set.
