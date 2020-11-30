@@ -74,15 +74,15 @@ Summary of all unique URLs found in all documents:
 
 <img src="image10.jpg">
 
-Summary of all passwords found in all documents (passwords and users names are a couple of the 22 'sensitive item' types supported by the Open Discover SDK). The identified passwords in the extracted text of all documents can be used to re-process any document that has a processing result of 'WrongPassword':
+Summary of all passwords found in all documents (passwords and usernames are just 2 out of 22 'sensitive item' types supported by the Open Discover SDK/Platform). Password/username credentials in doucments can be a security risk, they can also be used to re-process any document that has a processing result of 'WrongPassword' (as employees in the same company often email each other passwords to shared encrypted office documents):
 
 <img src="image11.jpg">
 
-Summary of languages found in the extracted text of the processed Enron data set:
+Summary of languages detected in the extracted text of the processed documents:
 
 <img src="image12.jpg">
 
-Example full-text search (extracted text):
+Example full-text search query (RAVENDB supports Lucene queries):
 
 <img src="image13.jpg">
 
