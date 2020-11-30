@@ -95,5 +95,5 @@ Example search by EntityItemType, in this example we search for all documents th
 <img src="image15.jpg">
 
 ### Summary
-Open Discover Platform output stored in a document database such as RAVENDB can lead to powerful full-text search/eDiscovery/information governance applications with little work. If this demo used a relational database instead of a document database, it would have taken months and not 2 weeks to develop.
+Open Discover Platform output stored in a document database such as RAVENDB can lead to powerful full-text search/eDiscovery/information governance applications with little work. If this demo used a relational database instead of a document database, it would have taken months and not the 2 weeks in time it took the author to develop this proof of concept demo.
 
