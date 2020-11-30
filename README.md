@@ -48,7 +48,31 @@ Some "entities" identified in a different email:
 
 <img src="image4.jpg">
 
-### Query the RAVEDB document
+### Querying the document store (RAVEDB) with the .NET WPF demo
+
+Some of the 31 RAVENDB indexes that the .NET WPF demo application uses to query the document store (note that there are 37.5 million metadata properties stored in this database in addition to all of the extracted text):
+
+<img src="image5.jpg">
+
+<img src="image6.jpg">
+
+<img src="image7.jpg">
+
+<img src="image8.jpg">
+
+<img src="image9.jpg">
+
+<img src="image10.jpg">
+
+<img src="image11.jpg">
+
+<img src="image12.jpg">
+
+<img src="image13.jpg">
+
+<img src="image14.jpg">
+
+<img src="image15.jpg">
 
 
 
