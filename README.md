@@ -54,7 +54,7 @@ Some of the 31 RAVENDB indexes that the .NET WPF demo application uses to query 
 
 <img src="image5.jpg">
 
-The .NET WPF demo application - the screen shot below shows the processing summary of the 189 Microsoft Outlook PST Enron data set (1,221,542 emails and attachments processed in total). Note the file types by file type classification pie chart, summary of file types by specific file format pie chart, and summary of processing results (Ok(Success)/WrongPassword/DataError/etc) pie chart. 
+The .NET WPF demo application - the screen shot below shows the processing summary of the 189 Microsoft Outlook PST Enron data set (1,221,542 emails and attachments processed in total). Note the file format classification pie chart, summary of specific file format pie chart, and summary of processing results (Ok(Success)/WrongPassword/DataError/etc) pie chart. 
 
 <img src="image6.jpg">
 
