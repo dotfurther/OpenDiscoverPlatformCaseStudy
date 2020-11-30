@@ -32,4 +32,10 @@ In addition to the Open Discover Platform API, a 3rd party partner has developed
 
 ### Lets take a quick look at the content that Open Discover Platform API extracted from the Enron Outlook PST dataset and which got bulk inserted into a RAVEDB document store
 
-<img src="Image1.png">
+<img src="Image1.jpg">
+
+<img src="Image2.jpg">
+
+<img src="Image3.jpg">
+
+<img src="Image4.jpg">
