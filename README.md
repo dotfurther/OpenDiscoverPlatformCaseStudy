@@ -3,8 +3,7 @@
 ### This repository show cases the following:
   - Using the Open Discover Platform API to process the Enron Microsoft Outlook PST Data Set published by EDRM and ZL Technologies, Inc.   
   - Using [RAVENDB 5.1](https://ravendb.net/) document database to store, index, and query the output produced by the Open Discover Platform API. RAVENDB 5.1 now allows for text attachments to be indexed; however, for this case study extracted from emails and office documents will be stored as a document property and indexed. 
-  - Using the above [RAVENDB 5.1](https://ravendb.net/) document database, we will show case:
-     - .NET WPF demo application that uses custom RAVENDB indexes to query and then display results. 
+  - .NET WPF demo application that queries the RAVENDB document store using custom indexes and display results:
      - Summaries of a document counts, file types, file sizes
      - Charts of all documents counts by a "SortDate" (SortDate is a date calculated from either document metadata or document file system properties, and it usually represents the date the document owner last modified the document).
      - Summary of all languages found in all documents in the data set.
@@ -31,11 +30,12 @@ The PlatformAPIDemo.exe along with C# examples for bulk inserting into RAVENDB, 
 In addition to the Open Discover Platform API, a 3rd party partner has developed a processing job management system (JMS) that manages distributed DocumentTaskEngine instances (and OCR worker instances) whether on separate desktops, virtual machines, or Azure Docker containers. If you are in the legal/eDiscovery/information governance industries (or if your company routinely processes large volumes of documents) and are interested in demo-ing the JMS/Open Discover Platform then contact us at https://dotfurther.com/contact-us/.
 
 ### Lets take a quick look at the content that Open Discover Platform API extracted from the Enron Outlook PST dataset and which got bulk inserted into a RAVEDB document store
-
+This screen shot shows an email (and its attachments) that were extracted and processed from one of the Enron Outlook PSTs. Note the calculated "SortData", document hashes, and metadata
 <img src="Image1.jpg">
-
+Email specific content like all recipients and extra hashes:
 <img src="Image2.jpg">
-
+This email screen shot shows a bank account number that was extracted/identified as a "sensitive item":
 <img src="image3.jpg">
-
+Some "entities" found in another email:
 <img src="image4.jpg">
+
