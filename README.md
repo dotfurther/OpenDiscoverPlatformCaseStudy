@@ -70,7 +70,7 @@ Sensitive Item/Entity Item Summary for all documents:
 
 <img src="image9.jpg">
 
-Summary of all unique URLs found in all documents (URLs from every document may be useful, for example, if a company wants to track down the entry point of a data breach):
+Summary of all unique URLs found in all documents (URLs from every document may be useful, for example, if a company wants to track down potential malicious url entry points):
 
 <img src="image10.jpg">
 
