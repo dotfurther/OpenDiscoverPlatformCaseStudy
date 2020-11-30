@@ -36,6 +36,6 @@ In addition to the Open Discover Platform API, a 3rd party partner has developed
 
 <img src="Image2.jpg">
 
-<img src="Image3.jpg">
+<img src="image3.jpg">
 
-<img src="Image4.jpg">
+<img src="image4.jpg">
