@@ -31,7 +31,7 @@ The PlatformAPIDemo.exe along with C# example projects for bulk inserting into R
 
 In addition to the Open Discover Platform API, a 3rd party partner has developed a processing job management system (JMS) that manages distributed DocumentTaskEngine instances (and OCR worker instances) whether on separate desktops, virtual machines, or Azure Docker containers. If you are in the legal/eDiscovery/information governance industries (or if your company routinely processes large volumes of documents) and are interested in demo-ing the JMS/Open Discover Platform then contact us at https://dotfurther.com/contact-us/.
 
-### Quick look example content that Open Discover Platform API extracted from the Enron Outlook PST dataset (i.e., the content which was bulk inserted into a RAVEDB document store):
+### Quick look at the types of content that Open Discover Platform API extracted from the Enron Outlook PST dataset (i.e., the content which was bulk inserted into a RAVEDB document store):
 The below screen shot shows an email (and its attachments) that was extracted and processed from one of the Enron Outlook PSTs. Note the calculated "SortDate" and document hashes and the extracted metadata:
 
 <img src="Image1.jpg">
@@ -40,7 +40,7 @@ Email specific content like all recipients and extra hashes:
 
 <img src="Image2.jpg">
 
-This email screen shot shows a bank account number that was extracted/identified as a "sensitive item" in the email's extracted text (extracted text and metadata are scanned for sensitive items):
+This processed email screen shot shows a bank account number that was extracted/identified as a "sensitive item" in the email's extracted text (all extracted text and all metadata are scanned for sensitive items):
 
 <img src="image3.jpg">
 
@@ -54,7 +54,7 @@ Some of the 31 RAVENDB indexes that the .NET WPF demo application uses to query 
 
 <img src="image5.jpg">
 
-The .NET WPF demo application, the screen shot below shows the processing summary of the 189 Outlook PST Enron data set (1,221,542 emails and attachments processed). Note the file types by classification pie chart, summary of file types by specific file format pie chart, and summary of processing results (success/wrong password/processing errors/etc) pie chart. 
+The .NET WPF demo application - the screen shot below shows the processing summary of the 189 Outlook PST Enron data set (1,221,542 emails and attachments processed). Note the file types by file type classification pie chart, summary of file types by specific file format pie chart, and summary of processing results (Success/WrongPassword/DataError/etc) pie chart. 
 
 <img src="image6.jpg">
 
