@@ -64,7 +64,7 @@ The screen shot below shows some of the 31 RavenDB indexes that the "ECA Demo Ap
 
 ### The "ECA Demo App" 
 
-The screen shot below shows the processing summary statistics of the 189 Microsoft Outlook PST Enron data set (1,221,542 emails and attachments processed in total). Most of the emails and attachments in this dataset are duplicate documents due to the fact that the Enron employees whose data was collected during the legal discovery phase were emailing each other back and forth. Note the file format classification pie chart, summary of specific file format pie chart, and summary of processing results (Ok(Success)/WrongPassword/DataError/etc) pie chart. 
+The screen shot below shows the processing summary statistics of the 189 Microsoft Outlook PST Enron data set (1,221,542 emails and attachments processed in total). Most of the emails and attachments in this dataset are duplicate documents due to the fact that the Enron employees whose data was collected during the legal discovery phase were emailing each other back and forth - the deduplication statistics shown in image below was based on binary/content hash, in the future, we will update this case study (along with RavenDB indexes) to include the legal industry prefered "family deduplication". Note the file format classification pie chart, summary of specific file format pie chart, and summary of processing results (enumeration type with values of Ok/WrongPassword/DataError/etc) pie chart. 
 
 <img src="image6.png">
 
