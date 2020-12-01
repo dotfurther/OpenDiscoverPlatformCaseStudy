@@ -32,7 +32,7 @@ The PlatformAPIDemo.exe along with C# example projects for bulk inserting into R
 In addition to the Open Discover Platform API offering, a 3rd party partner has developed a processing job management system (JMS) that manages distributed Platform API instances (and OCR worker instances) whether run on separate desktops, virtual machines, or Azure Docker containers. By using the JMS to manage distributed instances of the Platform API, customers can process terabytes of data a day on just one 16-core server. If you are in the legal/eDiscovery/information governance industries (or if your company routinely processes large volumes of documents) and are interested in demo-ing the JMS/Open Discover Platform then contact us at https://dotfurther.com/contact-us/.
 
 ### Quick look at the types of content that Open Discover Platform API extracted from the Enron Microsoft Outlook PST dataset (i.e., the content which was bulk inserted into a RAVEDB document store):
-The below screen shot shows an email (and its attachments) that was extracted and processed from one of the Enron Outlook PSTs. Note the calculated "SortDate" and document hashes and the extracted metadata:
+The below screen shot shows an email (and its attachments) that was extracted and processed by the PlatformAPIDemo.exe application. The email is from one of the Enron Microsoft Outlook PSTs. Note the calculated "SortDate" and document hashes and the extracted metadata:
 
 <img src="Image1.png">
 
