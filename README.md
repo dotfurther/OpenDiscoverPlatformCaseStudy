@@ -121,6 +121,8 @@ Open Discover Platform output stored in a document database such as RavenDB can 
 - Information governance
 - eDiscovery
 - Data breach analysis
+- Enterprise search and content management
+- IT Department applications - identify documents with sensitive information and/or that are redunant, obsolete, and trivial (ROT).
 
 If this case study had used a relational database instead of a document database such as RavenDB, it would have taken months of database schema design and store procedure development and not the 2 weeks in time it took the author to develop this proof of concept Early Case Assessment proof of concept.
 
