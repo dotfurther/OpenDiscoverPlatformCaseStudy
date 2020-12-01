@@ -20,7 +20,7 @@
      - Full-text search using RavenDB
      - Searching for all documents that have a specific type of sensitive item (e.g., search for all documents with a bank account or IBAN numbers).
      - Many features of an eDiscovery early case assessment (ECA) application 
-  - Open Discover Platform API + document store such as RavenDB or Elasticsearch leads to fast, easy, and powerful full-text search/eDiscovery/Information governance applications.   
+  - Open Discover Platform API + document store such as RavenDB leads to fast, easy, and powerful full-text search/eDiscovery/Information governance applications.   
 ### We chose the Enron Microsoft Outlook PST Data Set for the following reasons:
 - It is a common benchmark dataset used in legal/eDiscovery/Information Governance industries (mostly for comparing document/attachment counts, de-duplication, and relative processing/indexing speeds)
 - This data set still has, even after rounds of personally identifiable information cleansing, MUCH sensitive item information (PII) such as credit card numbers, social security numbers, IBAN accounts, investment account numbers, driver's licenses, and much more. Since it is an 'old' dataset (~20 years), and it is a publicly available dataset, those effected by the loss of personal information were long ago notified.
