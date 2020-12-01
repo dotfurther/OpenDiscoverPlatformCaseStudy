@@ -50,7 +50,7 @@ Some "entities" identified in a different email:
 
 ### Querying the document store (RavenDB) with the .NET WPF demo
 
-The screen shot below shows some of the database document fields store in RavenDB. There are many more fields stored than shown below. The column names with a red border annotation are collections of objects:
+The screen shot below shows the Enron database in RavenDB Studio populated with Platform API output. Only some of the database document fields stored in RavenDB could fit into the screen shot, there are many more fields. The column names with a red border annotation are collections of objects:
 
 <img src="image5a.png">
 
