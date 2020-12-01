@@ -3,7 +3,7 @@
 ### This repository show cases the following:
   - Using the Open Discover Platform API to process the Enron Microsoft Outlook PST Data Set published by EDRM and ZL Technologies, Inc. The data set is 189 Microsoft Outlook PST (.pst) files that total approximately 50GB in size.
   - Using a document database to store, index, and query the output produced by the Open Discover Platform API. In the study we use [RavenDB 5.1](https://ravendb.net/) as our document database. RavenDB 5.1 now allows for text attachments to be indexed; however, for this case study extracted text will be stored as a document record property and indexed. 
-  - .NET WPF demo application (a C# application with source code available to those that demo Open Discover Platform) that uses custom RavenDB indexes to query and display:
+  - "eDiscovery Early Case Assessment (ECA) Proof of Concept" demo application (a C# application with source code available to those that demo Open Discover Platform). From here on out we will call this demo application the "ECA Demo App". This proof of concept/demo app uses custom RavenDB indexes to query and display:
      - Summaries of a document counts, file types, file sizes
      - Charts of all documents counts by a "SortDate" (SortDate is a date calculated from either document metadata or document file system properties, and it usually represents the date the document owner last modified the document).
      - Summary of all languages found in all documents in the data set.
@@ -48,17 +48,19 @@ Some "entities" identified in a different email:
 
 <img src="image4.png">
 
-### Querying the document store (RavenDB) with the .NET WPF demo
+### Querying the document store (RavenDB) with the "ECA Demo App"
 
 The screen shot below shows the Enron database in RavenDB Studio populated with Platform API output. Only some of the database document fields stored in RavenDB could fit into the screen shot, there are many more fields. The column names with a red border annotation are collections of objects:
 
 <img src="image5a.png">
 
-Some of the 31 RavenDB indexes that the .NET WPF demo application uses to query the document store (note that there are 37.5 million metadata properties stored in this database, mostly email metadata, in addition to all of the extracted text):
+The screen shot below shows some of the 31 RavenDB indexes that the "ECA Demo App" uses to query the document store (note that there are 37.5 million metadata properties stored in this database, mostly email metadata, in addition to all of the extracted text):
 
 <img src="image5.png">
 
-The .NET WPF demo application - the screen shot below shows the processing summary of the 189 Microsoft Outlook PST Enron data set (1,221,542 emails and attachments processed in total). Note the file format classification pie chart, summary of specific file format pie chart, and summary of processing results (Ok(Success)/WrongPassword/DataError/etc) pie chart. 
+### The "ECA Demo App" 
+
+The screen shot below shows the processing summary statistics of the 189 Microsoft Outlook PST Enron data set (1,221,542 emails and attachments processed in total). Note the file format classification pie chart, summary of specific file format pie chart, and summary of processing results (Ok(Success)/WrongPassword/DataError/etc) pie chart. 
 
 <img src="image6.png">
 
@@ -99,5 +101,5 @@ Example search by EntityItemType, in this example we search for all documents th
 <img src="image15.png">
 
 ### Summary
-Open Discover Platform output stored in a document database such as RavenDB can lead to powerful full-text search/eDiscovery/information governance applications with little work. If this demo used a relational database instead of a document database, it would have taken months and not the 2 weeks in time it took the author to develop this proof of concept case study.
+Open Discover Platform output stored in a document database such as RavenDB can lead to powerful full-text search/eDiscovery/information governance applications with little work. If this demo had used a relational database instead of a document database, it would have taken months and not the 2 weeks in time it took the author to develop this proof of concept Early Case Assessment proof of concept.
 
