@@ -1,9 +1,13 @@
-# Open Discover® Platform Case Study
-## Open Discover Platform is a higher level of document content extraction/processing API built upon the Open Discover SDK for .NET. 
+# Case Study: Use of Open Discover® Platform and RavenDB document store in eDiscovery Early Case Assessment (ECA). 
+
+## [ECA](https://en.wikipedia.org/wiki/Early_case_assessment) "refers to estimating risk to prosecute or defend a legal case. Global organizations deal with legal discovery and disclosure requests for electronically stored information "ESI" and paper documents on a regular basis." 
+
+## Open Discover® Platform is a higher level of document content extraction/processing API built upon the Open Discover® SDK for .NET. 
+
 ### This repository show cases the following:
-  - Using the Open Discover Platform API to process the Enron Microsoft Outlook PST Data Set published by EDRM and ZL Technologies, Inc. The data set is 189 Microsoft Outlook PST (.pst) files that total approximately 50GB in size.
-  - Using a document database to store, index, and query the output produced by the Open Discover Platform API. In the study we use [RavenDB 5.1](https://ravendb.net/) as our document database. RavenDB 5.1 now allows for text attachments to be indexed; however, for this case study extracted text will be stored as a document record property and indexed. 
-  - "eDiscovery Early Case Assessment (ECA) Proof of Concept" demo application (a C# application with source code available to those that demo Open Discover Platform). From here on out we will call this demo application the "ECA Demo App". This proof of concept/demo app uses custom RavenDB indexes to query and display:
+  - Using the Open Discover Platform API to process the Enron Microsoft Outlook PST Dataset published by EDRM and ZL Technologies, Inc. The data set is 189 Microsoft Outlook PST (.pst) files that total approximately 50GB in size. It is an open source dataset.
+  - Using the RavenDB document database to store, index, and query the output produced by the Open Discover Platform API. In the study we use [RavenDB 5.1](https://ravendb.net/) as our document database. RavenDB 5.1 now allows for text attachments to be indexed; however, for this case study extracted text will be stored as a document record property and indexed. 
+  - "eDiscovery Early Case Assessment (ECA) Proof of Concept" demo application (a C# application with source code available to those that demo Open Discover Platform). From here on out we will refer to this demo application as the "ECA Demo App". This proof of concept/demo app uses custom RavenDB indexes to query and display:
      - Summaries of a document counts, file types, file sizes
      - Charts of all documents counts by a "SortDate" (SortDate is a date calculated from either document metadata or document file system properties, and it usually represents the date the document owner last modified the document).
      - Summary of all languages found in all documents in the data set.
@@ -60,7 +64,7 @@ The screen shot below shows some of the 31 RavenDB indexes that the "ECA Demo Ap
 
 ### The "ECA Demo App" 
 
-The screen shot below shows the processing summary statistics of the 189 Microsoft Outlook PST Enron data set (1,221,542 emails and attachments processed in total). Note the file format classification pie chart, summary of specific file format pie chart, and summary of processing results (Ok(Success)/WrongPassword/DataError/etc) pie chart. 
+The screen shot below shows the processing summary statistics of the 189 Microsoft Outlook PST Enron data set (1,221,542 emails and attachments processed in total). Most of the emails and attachments in this dataset are duplicate documents due to the fact that the Enron employees whose data was collected during the legal discovery phase were emailing each other back and forth. Note the file format classification pie chart, summary of specific file format pie chart, and summary of processing results (Ok(Success)/WrongPassword/DataError/etc) pie chart. 
 
 <img src="image6.png">
 
@@ -68,7 +72,7 @@ File counts by SortDate summary charts:
 
 <img src="image7.png">
 
-Metadata summary (metadata field name/total number of documents) - 715 known unique metadata field names across all documents and 636 custom (user defined) metadata fields:
+Metadata summary (metadata field name/total number of documents) - 715 known unique metadata field names across all documents and 636 custom (user defined) metadata fields. This query can help legal case managers know what metadata fields are available in the collection to search on:
 
 <img src="image8.png">
 
@@ -91,6 +95,10 @@ Summary of languages detected in the extracted text of the processed documents:
 Example full-text search query (Note: RavenDB supports Lucene queries):
 
 <img src="image13.png">
+
+During the ECA phase, lawyers like create many different search queries to estimate the number of responding documents. The screen shot below shows a few saved Lucene queries and the results (number of document hits and total size of the documents):
+
+<img src="image13b.png">
 
 Example search by SensitiveItemType, in this example we search for all documents that have a sensitive item of type SensitiveItemType.BankAccount:
 
