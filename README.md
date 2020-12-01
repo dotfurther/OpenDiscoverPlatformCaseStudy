@@ -68,7 +68,7 @@ File counts by SortDate summary charts:
 
 <img src="image7.png">
 
-Metadata summary (metadata field name/total number of documents) - 715 known unique metadata field names across all documents and 636 custom (user defined) metadata fields:
+Metadata summary (metadata field name/total number of documents) - 715 known unique metadata field names across all documents and 636 custom (user defined) metadata fields. This query can help legal case managers know what metadata fields are available in the collection to search on:
 
 <img src="image8.png">
 
