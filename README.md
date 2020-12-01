@@ -61,11 +61,11 @@ Some "entities" identified in a different email:
 
 ### Querying the document store (RavenDB) with the "ECA Demo App"
 
-The screen shot below shows the Enron database in RavenDB Studio populated with Platform API output. Only some of the database document fields stored in RavenDB could fit into the screen shot, there are many more fields. The column names with a red border annotation are collections of objects:
+The screen shot below shows the Enron database in RavenDB Studio populated with Platform API processed output. Only some of the database document fields stored in RavenDB could fit into the screen shot, there are many more fields. The column names with a red border annotation are collections of objects:
 
 <img src="image5a.png">
 
-The screen shot below shows some of the 31 RavenDB indexes that the "ECA Demo App" uses to query the document store (note that there are 37.5 million metadata properties stored in this database, mostly email metadata, in addition to all of the extracted text):
+The screen shot below shows some of the 31 RavenDB indexes that the "ECA Demo App" uses to query the document store (note that the "MetadataPropertyIndex" shows that there are 37.7 million metadata properties stored in this database, mostly email metadata, in addition to all of the extracted text):
 
 <img src="image5.png">
 
