@@ -96,6 +96,10 @@ Example full-text search query (Note: RavenDB supports Lucene queries):
 
 <img src="image13.png">
 
+During the ECA phase, lawyers like create many different search queries to estimate the number of responding documents. The screen shot below shows a few saved Lucene queries and the results (number of document hits and total size of the documents):
+
+<img src="image13b.png">
+
 Example search by SensitiveItemType, in this example we search for all documents that have a sensitive item of type SensitiveItemType.BankAccount:
 
 <img src="image14.png">
