@@ -117,7 +117,7 @@ Example search by EntityItemType, in this example we search for all documents th
 
 ### Summary
 Open Discover Platform output stored in a document database such as RavenDB can lead to very powerful and rapidly developed legal early case assessment (ECA) applications. In addition, applications such as the following can also be rapidly developed:
-- Full-text search
+- Full-text search (including metadata and sensitive item searches)
 - Information governance
 - eDiscovery
 - Data breach analysis
