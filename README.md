@@ -22,7 +22,7 @@
 - Extracting document text, metadata, and attributes
 - Identifying the languages present in the extracted text
 - Optionally, identifying sensitive items and entities present in the extracted text and metadata. Supported sensitive items include social security numbers, credit card numbers, bank account numbers, investment account numbers, IBAN, addresses, phone numbers, driver's license numbers, vehicle identification numbers (VIN), health care member numbers, and more
-- If a document has an attachment or embedded item, then this child item is also processed through the above steps, this continues until no more child documents are left to process
+- If a document has an attachment or embedded item, then this child item is also processed through the above steps, this continues until no more child documents are left to process (i.e., all documents/attachments/embedded items are completely processed and this includes container types such as archives and mail stores)
 
 A single instance of Open Discover Platform API is typically capable of processing document sets at 40-70 GB/hour rate* (* rates will be dependent on user hardware and file types in the dataset). It is very fast at processing documents while also extracting more content than most eDiscovery software (e.g., sensitive item/entity detection and de-NIST-ing while processing).
 An Open Discover Platform API demo application, PlatformAPIDemo.exe, was used to process the Enron Outlook PST dataset. The PlatformAPIDemo.exe demo application wraps one instance of the Platform API document processing class. Screen shots of example PlatformAPIDemo.exe processing output are shown in the next section below. 
