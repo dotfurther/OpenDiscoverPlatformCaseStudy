@@ -3,7 +3,9 @@
 ## [ECA](https://en.wikipedia.org/wiki/Early_case_assessment) "refers to estimating risk to prosecute or defend a legal case. Global organizations deal with legal discovery and disclosure requests for electronically stored information "ESI" and paper documents on a regular basis." 
 
 ## Open Discover® Platform is a higher level of document content extraction/processing API built upon the Open Discover® SDK for .NET. 
+
    See [Open Discover® SDK for .NET API Help](https://github.com/dotfurther/OpenDiscoverSDKHelp)
+ 
    See [Open Discover® SDK for .NET Examples GitHub Repository](https://github.com/dotfurther/OpenDiscoverSDK)
 
    
