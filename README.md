@@ -5,7 +5,7 @@
 ## Open Discover® Platform is a higher level of document content extraction/processing API built upon the Open Discover® SDK for .NET. 
 
 ### This repository show cases the following:
-  - Using the Open Discover Platform API to process the Enron Microsoft Outlook PST Dataset published by EDRM and ZL Technologies, Inc. The data set is 189 Microsoft Outlook PST (.pst) files that total approximately 50GB in size. It is an open source dataset.
+  - Using the Open Discover Platform API to process the Enron Microsoft Outlook PST Dataset published by EDRM and ZL Technologies, Inc. The data set is 189 Microsoft Outlook PST (.pst) files that total approximately 53 GB in size. It is an open source dataset.
   - Using the RavenDB document database to store, index, and query the output produced by the Open Discover Platform API. In the study we use [RavenDB 5.1](https://ravendb.net/) as our document database. RavenDB 5.1 now allows for text attachments to be indexed; however, for this case study extracted text will be stored as a document record property and indexed. 
   - "eDiscovery Early Case Assessment (ECA) Proof of Concept" demo application (a C# application with source code available to those that demo Open Discover Platform). From here on out we will refer to this demo application as the "ECA Demo App". This proof of concept/demo app uses custom RavenDB indexes to query and display:
      - Summaries of a document counts, file types, file sizes
@@ -35,7 +35,7 @@ The PlatformAPIDemo.exe along with C# example projects for bulk inserting into R
 
 In addition to the Open Discover Platform API offering, a 3rd party partner has developed a processing job management system (JMS) that manages distributed Platform API instances (and OCR worker instances) whether run on separate desktops, virtual machines, or Azure Docker containers. By using the JMS to manage distributed instances of the Platform API, customers can process terabytes of documents a day on just one 16-core server. If you are in the legal/eDiscovery/information governance industries (or if your company routinely processes large volumes of documents) and are interested in demo-ing the JMS/Open Discover Platform then contact us at https://dotfurther.com/contact-us/.
 
-In a recent test, the JMS processed and bulk inserted the 50GB Enron PST dataset into RavenDB in a little over 30 minutes with the JMS, 2 Platform API instances, and RavenDB running on the same 16-core server.
+In a recent test, the JMS processed and bulk inserted the 53 giga byte Enron PST dataset into RavenDB in a little over 30 minutes with the JMS, 2 Platform API instances, and RavenDB running on the same 16-core server.
 
 ### Quick look at the types of content that Open Discover Platform API extracted from the Enron Microsoft Outlook PST dataset (i.e., the content which was bulk inserted into a RavenDB document store):
 The below screen shot shows an email (and its attachments) that was extracted and processed by the PlatformAPIDemo.exe application. The email is from one of the Enron Microsoft Outlook PSTs. Note the calculated "SortDate" and document hashes and the extracted metadata:
