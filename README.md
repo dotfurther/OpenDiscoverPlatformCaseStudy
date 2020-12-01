@@ -50,7 +50,11 @@ Some "entities" identified in a different email:
 
 ### Querying the document store (RavenDB) with the .NET WPF demo
 
-Some of the 31 RavenDB indexes that the .NET WPF demo application uses to query the document store (note that there are 37.5 million metadata properties stored in this database in addition to all of the extracted text):
+The screen shot below shows some of the database document fields store in RavenDB. There are many more fields stored than shown below. The column names with a red border annotation are collections of objects:
+
+<img src="image5a.png">
+
+Some of the 31 RavenDB indexes that the .NET WPF demo application uses to query the document store (note that there are 37.5 million metadata properties stored in this database, mostly email metadata, in addition to all of the extracted text):
 
 <img src="image5.png">
 
