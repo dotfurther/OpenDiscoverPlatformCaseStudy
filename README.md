@@ -36,7 +36,13 @@
 A single instance of Open Discover Platform API is typically capable of processing document sets at 40-70 GB/hour rate* (* rates will be dependent on user hardware and file types in the dataset). It is very fast at processing documents while also extracting more content than most eDiscovery software (e.g., sensitive item/entity detection and de-NIST-ing while processing).
 An Open Discover Platform API demo application, PlatformAPIDemo.exe, was used to process the Enron Outlook PST dataset. The PlatformAPIDemo.exe demo application wraps one instance of the Platform API document processing class. Screen shots of example PlatformAPIDemo.exe processing output are shown in the next section below. 
 
-The PlatformAPIDemo.exe along with C# example projects for bulk inserting into RavenDB, advanced RavenDB indexes, creating eDiscovery load files from Platform API output, and Lucene indexing Platform API output are distributed to companies that evaluate the Open Discover SDK and Platform API. 
+The PlatformAPIDemo.exe is distributed with the Open Discover Platform evaluation along with:
+  - Open Discover SDK for .NET and Platform assemblies
+  - C# example project for bulk inserting into RavenDB
+  - C# example project with advanced RavenDB indexes
+  - "ECA Demo App" source code which use the above two listed C# projects
+  - C# example that creates eDiscovery review system "load files" from Platform API output
+  - Lucene full-text search indexing example (indexes text/metadata/sensitive items from Platform API output)
 
 In addition to the Open Discover Platform API offering, a 3rd party partner has developed a processing job management system (JMS) that manages distributed Platform API instances (and OCR worker instances) whether run on separate desktops, virtual machines, or Azure Docker containers. By using the JMS to manage distributed instances of the Platform API, customers can process terabytes of documents a day on just one 16-core server. If you are in the legal/eDiscovery/information governance industries (or if your company routinely processes large volumes of documents) and are interested in demo-ing the JMS/Open Discover Platform then contact us at https://dotfurther.com/contact-us/.
 
