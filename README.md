@@ -30,7 +30,7 @@
 - de-NIST-ing the documents (that is, comparing each document hash to a ~100M known NIST hash database of common/known files). 
 - Extracting document text, metadata, attributes, and child documents (attachments/embedded objects/container items)
 - Identifying the languages present in the extracted text
-- Optionally, identifying sensitive items and entities present in the extracted text and metadata. Supported sensitive items include social security numbers, credit card numbers, bank account numbers, investment account numbers, IBAN, addresses, phone numbers, driver's license numbers, vehicle identification numbers (VIN), health care member numbers, and more
+- Optionally, identifying sensitive items and supported entity types present in the extracted text and metadata. Supported sensitive items include social security numbers, credit card numbers, bank account numbers, investment account numbers, IBAN, addresses, phone numbers, driver's license numbers, vehicle identification numbers (VIN), health care member numbers, and more
 - If a document has an attachment or embedded item, then this child item is also processed through the above steps, this continues until no more child documents are left to process (i.e., all documents/attachments/embedded items are completely processed and this includes supported container types such as archives and mail stores)
 
 A single instance of Open Discover Platform API is typically capable of processing document sets at 40-70 GB/hour rate* (* rates will be dependent on user hardware and file types in the dataset). It is very fast at processing documents while also extracting more content than most eDiscovery software (e.g., sensitive item/entity detection and de-NIST-ing while processing).
