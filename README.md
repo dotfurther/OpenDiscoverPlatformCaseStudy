@@ -109,6 +109,10 @@ Example full-text search query (Note: RavenDB supports Lucene queries):
 
 <img src="image13.png">
 
+The above Lucene query on ExtractedText field (and optionally, min/max SortData fields), looks like this:
+
+<img src="image13a.png">
+
 During the ECA phase, legal review lawyers like to create many different search queries to find responding documents. The screen shot below shows a few saved Lucene queries and the results (number of document hits and total size of the documents). Note that the document counts in these user created searches contain duplicate document counts, although we have RavenDB indexes that count the number of duplicate documents, for this proof of concept, we have not yet "marked" documents in document store with a flag indicating master/duplicate (this is a 'TODO' by user):
 
 <img src="image13b.png">
@@ -123,7 +127,7 @@ Example search by EntityItemType, in this example we search for all documents th
 
 ### Summary
 Open Discover Platform output stored in a document database such as RavenDB can lead to very powerful and rapidly developed legal early case assessment (ECA) applications. In addition, applications such as the following can also be rapidly developed:
-- Full-text search (including metadata and sensitive item searches)
+- Powerful full-text search (including metadata and sensitive item field searches)
 - Information governance
 - eDiscovery
 - Data breach analysis
