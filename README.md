@@ -125,6 +125,12 @@ Example search by EntityItemType, in this example we search for all documents th
 
 <img src="image15.png">
 
+In the screen shot below, we use a special RavenDB index that indexes extracted entity types to find documents that may have student information (in the screen shot, the
+student's name and student ID are blacked out, the student ID appears to be a social security number which was common in the past):
+
+<img src="image16.png">
+
+
 ### Summary
 Open Discover Platform output stored in a document database such as RavenDB can lead to very powerful and rapidly developed legal early case assessment (ECA) applications. In addition, applications such as the following can also be rapidly developed:
 - Powerful full-text search (including metadata and sensitive/entity item field searches)
