@@ -109,7 +109,7 @@ Example full-text search query (Note: RavenDB supports Lucene queries):
 
 <img src="image13.png">
 
-The above Lucene query on ExtractedText field (and optionally, min/max SortData fields), looks like this:
+The above Lucene query, queries the ExtractedText field and uses (optionally) min/max document SortDate to filter the returned search results. It would be very easy to also add filtering of results by document FileType or document format Classification (WordProcessing/Spreadsheet/Email/etc). The C# code that performs the Lucene query looks like this:
 
 <img src="image13a.png">
 
