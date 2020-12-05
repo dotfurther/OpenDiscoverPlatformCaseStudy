@@ -65,6 +65,11 @@ Some "entities" identified in a different email. By inspecting the types of enti
 
 <img src="image4.png">
 
+The "NativeDocument" class encapsulates what is fully extracted during processing and what is stored in the RavenDB Enron database:
+
+<img src="NativeDocumentClassDiagram.png">
+
+
 ### Querying the document store (RavenDB) with the "ECA Demo App"
 
 The screen shot below shows the Enron database in RavenDB Studio populated with Platform API processed output. Only some of the database document fields stored in RavenDB could fit into the screen shot, there are many more fields. The column names with a red border annotation are collections of objects:
