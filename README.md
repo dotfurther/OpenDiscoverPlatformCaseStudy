@@ -40,7 +40,7 @@ The PlatformAPIDemo.exe is distributed with the Open Discover Platform evaluatio
   - Open Discover SDK for .NET and Platform assemblies
   - C# example project for bulk inserting into RavenDB
   - C# example project with advanced RavenDB indexes
-  - "ECA Demo App" source code which use the above two listed C# projects
+  - "ECA Demo App" source code which use the above two listed RavenDB C# projects
   - C# example that creates eDiscovery review system "load files" from Platform API output
   - Lucene full-text search indexing example (indexes text/metadata/sensitive items from Platform API output)
 
