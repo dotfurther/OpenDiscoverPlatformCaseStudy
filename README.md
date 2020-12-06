@@ -84,7 +84,7 @@ The "MetadataPropertyIndex" C# class code is displayed below. This index class d
 
 <img src="image5b.png">
 
-All C# created RavenDB indexes get created in the RavenDB Enron database from "ECA Demo App" via a simple RavenDB API call:
+All C# defined RavenDB indexes get created in the RavenDB Enron database from the "ECA Demo App" via a simple RavenDB API call:
 
 <img src="image5c.png">
 
