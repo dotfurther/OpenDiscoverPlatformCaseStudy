@@ -40,7 +40,7 @@ The PlatformAPIDemo.exe is distributed with the Open Discover Platform evaluatio
   - Open Discover SDK for .NET and Platform assemblies
   - C# example project for bulk inserting into RavenDB
   - C# example project with advanced RavenDB indexes
-  - "ECA Demo App" source code which use the above two listed C# projects
+  - "ECA Demo App" source code which use the above two listed RavenDB C# projects
   - C# example that creates eDiscovery review system "load files" from Platform API output
   - Lucene full-text search indexing example (indexes text/metadata/sensitive items from Platform API output)
 
@@ -65,6 +65,11 @@ Some "entities" identified in a different email. By inspecting the types of enti
 
 <img src="image4.png">
 
+The "NativeDocument" class encapsulates what is fully extracted during processing and what is stored in the RavenDB Enron database:
+
+<img src="NativeDocumentClassDiagram.png">
+
+
 ### Querying the document store (RavenDB) with the "ECA Demo App"
 
 The screen shot below shows the Enron database in RavenDB Studio populated with Platform API processed output. Only some of the database document fields stored in RavenDB could fit into the screen shot, there are many more fields. The column names with a red border annotation are collections of objects:
@@ -74,6 +79,15 @@ The screen shot below shows the Enron database in RavenDB Studio populated with 
 The screen shot below shows some of the 31 RavenDB indexes that the "ECA Demo App" uses to query the document store (note that the "MetadataPropertyIndex" shows that there are 37.7 million metadata properties stored in this database, mostly email metadata, in addition to all of the extracted text):
 
 <img src="image5.png">
+
+The "MetadataPropertyIndex" C# class code is displayed below. This index class derives from RavenDB's AbstractIndexCreationTask (as do all other indexes in this demo).  This index will allow Lucene 'like' queries on all metadata fields. A similar index for NativeDocument.CustomMetadata exists:
+
+<img src="image5b.png">
+
+All C# created RavenDB indexes get created in the RavenDB Enron database from "ECA Demo App" via a simple RavenDB API call:
+
+<img src="image5c.png">
+
 
 ### The "ECA Demo App" 
 
