@@ -139,8 +139,7 @@ Example search by EntityItemType, in this example we search for all documents th
 
 <img src="image15.png">
 
-In the screen shot below, we use a special RavenDB index that indexes extracted entity types to find documents that may have student information (in the screen shot, the
-student's name and student ID are blacked out, the student ID appears to be a social security number which was common in the past):
+In the screen shot below, we use a specially created RavenDB index that indexes specific Open Discover SDK extracted entity types related to student information to find documents that may have student information (in the screen shot, the student's name and student ID are blacked out, the student ID appears to be a social security number which was common before the 2000's). Likewise, we have other special indexes to search for medical records and patient information:
 
 <img src="image16.png">
 
