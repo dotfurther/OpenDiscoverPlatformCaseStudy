@@ -107,7 +107,7 @@ Sensitive Item/Entity Item Summary for all documents:
 
 <img src="image9.png">
 
-Summary of all unique URLs found in all documents (URLs from every document may be useful, for example, if a company wants to track down potential malicious url entry points):
+Summary of all unique URLs found in all documents (URLs from every document may be useful, for example, if a company wants to track down potential malicious url entry points). Open Discover SDK detects all URLs from document hyperlinks and in document text (i.e., non-hyperlink):
 
 <img src="image10.png">
 
