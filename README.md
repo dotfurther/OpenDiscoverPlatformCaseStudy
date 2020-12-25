@@ -135,7 +135,7 @@ Example search by SensitiveItemType (a property on detected SensitiveItem object
 
 <img src="image14.png">
 
-Example search by EntityItemType, in this example we search for all documents that have a entity item of type EntityItemType.PatientNameEntry:
+Example search by EntityItemType (a property on detected EntityItem objects that identifies the type of entity item), in this example we search for all documents that have a entity item of type EntityItemType.PatientNameEntry:
 
 <img src="image15.png">
 
