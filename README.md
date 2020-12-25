@@ -131,7 +131,7 @@ During the ECA phase, legal review lawyers like to create many different search 
 
 <img src="image13b.png">
 
-Example search by SensitiveItemType, in this example we search for all documents that have a sensitive item of type SensitiveItemType.BankAccount:
+Example search by SensitiveItemType (a property on detected SensitiveItem objects that identifies the type of sensitive item), in this example we search for all documents that have a sensitive item of type SensitiveItemType.BankAccount:
 
 <img src="image14.png">
 
