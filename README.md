@@ -52,8 +52,9 @@ In a recent performance test, the JMS processed the 53 GB Enron Microsoft Outloo
 <img src="JMS_Diagram.png">
 
 
-### Quick look at the types of content that Open Discover Platform API extracted from the Enron Microsoft Outlook PST dataset (i.e., the content which was bulk inserted into a RavenDB document store):
-The screen shot below shows an email (and its attachments) that was extracted and processed by the PlatformAPIDemo.exe application. The email is from one of the Enron Microsoft Outlook PSTs. Note the calculated "SortDate" and document hashes and the extracted metadata:
+### Quick look at the types of content that Open Discover Platform API extracted from the Enron Microsoft Outlook PST dataset (i.e., the types of content which was bulk inserted into a RavenDB document store for each document):
+
+The screen shot below shows an email item (and its attachments) that was extracted from its Outlook PST container and processed by the PlatformAPIDemo.exe application. The email is from one of the Enron Microsoft Outlook PSTs. The tree view control on the left side of the image shows the parent/child hierarchy of all processed documents/containers, and clicking on a item in the tree control will show its extracted content. For the selected Outlook email item in the tree view, we can see that it has 6 MS Office Word documents as attachments that were extracted from the email. Each and every attachment/embedded item also had their content extracted (processing fully unrolls any parent child hierarchy, no matter how complex). Note the file format identification results, calculated "SortDate", various document hashes, the extracted metadata, and other tab items on the top right-hand side of image that contain other extracted content:
 
 <img src="Image1.png">
 
