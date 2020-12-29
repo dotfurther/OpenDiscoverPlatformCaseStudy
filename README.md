@@ -66,7 +66,7 @@ This processed email screen shot shows a bank account number that was extracted/
 
 <img src="image3.png">
 
-Some "entities" identified in a different email. By inspecting the types of entities found in this email, we can surmise the email is discussing a legal matter:
+Some "entities" identified and extracted in a different email. Open Discover SDK and Platform also supports custom user defined entities (CustomItemDefinition). By inspecting the types of entities found in this email, we can surmise that the email is discussing a legal matter:
 
 <img src="image4.png">
 
