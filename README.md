@@ -25,7 +25,7 @@
 - It is a common benchmark dataset used in legal/eDiscovery/Information Governance industries (mostly for comparing document/attachment counts, de-duplication, and relative processing/indexing speeds)
 - This data set still has, even after rounds of personally identifiable information cleansing, MUCH sensitive item information (PII) such as credit card numbers, social security numbers, IBAN accounts, investment account numbers, driver's licenses, and much more. Since it is an 'old' dataset (~20 years), and it is a publicly available dataset, those effected by the loss of personal information were long ago notified.
 ### Open Discover Platform API is purposed for multi-threaded processing of sets of documents (typically a set is 1000-5000 documents at a time). 'Processing' a set of documents includes:
-- Identifying the file format types of each document
+- Identifying the file format types of each document (1,530+ file formats supported for identification)
 - Hashing the document bytes and/or content (document hashes are used to identify duplicate documents)
 - de-NIST-ing the documents (that is, comparing each document hash to a ~100M known NIST hash database of common/known files). 
 - Extracting document text, metadata, attributes, and child documents (attachments/embedded objects/container items)
