@@ -48,7 +48,7 @@ In addition to the Open Discover Platform API offering, a 3rd party partner has 
 
 In a recent performance test, the JMS processed the 53 GB Enron Microsoft Outlook PST dataset and bulk inserted the Platform API output (text/metadata/sensitive items/etc) into RavenDB in a little over 30 minutes on a 16-core Windows server. The JMS, 2 Platform API instances, 1 'worker' that bulk inserted task output into RavenDB, and RavenDB service were all running on the same 16-core server. That comes out to over 100+ GB/hour** processing rate just based on input document size and not expanded dataset size. 
 
-** This case study processing rate was for the .NET 4.62 version of SDK, the new .NET 5 version is > 100% faster on average, all the PST processing task on the .NET 5 version of OpenDiscoverPlatform processed their PST dataset tasks between 90-100+GB/hr rates (based on input size) with sensitive item detection enabled (processing rates are hardware dependent - in these numbers we used a single desktop PC with Intel i7 CPU and 16GB RAM).
+** This case study processing rate was for the .NET 4.62 version of SDK, the new .NET 5 version is > 100% faster on average, all the PST processing tasks on the .NET 5 version of OpenDiscoverPlatform processed their PST dataset tasks between 90-100+GB/hr rates (based on input size) WITH sensitive item detection enabled (processing rates are hardware dependent - in these numbers we used a single desktop PC with Intel i7 CPU and 16GB RAM).
 
 <img src="JMS_Diagram.png">
 
