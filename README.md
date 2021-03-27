@@ -71,10 +71,6 @@ Some "entities" identified and extracted in a different email. By inspecting the
 
 <img src="image4.png">
 
-The "NativeDocument" class encapsulates what is fully extracted during processing and what is stored in the RavenDB Enron database:
-
-<img src="NativeDocumentClassDiagram.png">
-
 
 ### Querying the document store (RavenDB) with the "ECA Demo App"
 
