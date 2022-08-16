@@ -1,8 +1,8 @@
-# Case Study: Use of Open Discover® Platform and RavenDB document store in eDiscovery Early Case Assessment (ECA). 
+# Case Study: Use of Open Discover™ Platform and RavenDB document store in eDiscovery Early Case Assessment (ECA). 
 
 ## [ECA](https://en.wikipedia.org/wiki/Early_case_assessment) "refers to estimating risk to prosecute or defend a legal case. Global organizations deal with legal discovery and disclosure requests for electronically stored information "ESI" and paper documents on a regular basis." 
 
-## Open Discover® Platform is a higher level of document content extraction/processing API built upon the Open Discover® SDK for .NET. 
+## Open Discover™ Platform is a higher level of document content extraction/processing API built upon the Open Discover® SDK for .NET. 
 
    See [Open Discover® SDK for .NET API Help](https://dotfurther.github.io/OpenDiscoverSDKHelp)
  
@@ -10,7 +10,7 @@
 
    
 ### This repository show cases the following:
-  - Using the Open Discover Platform API to process the Enron Microsoft Outlook PST Dataset published by EDRM and ZL Technologies, Inc. The data set is 189 Microsoft Outlook PST (.pst) files that total approximately 53 GB in size. It is an open source dataset.
+  - Using the Open Discover™ Platform API to process the Enron Microsoft Outlook PST Dataset published by EDRM and ZL Technologies, Inc. The data set is 189 Microsoft Outlook PST (.pst) files that total approximately 53 GB in size. It is an open source dataset.
   - Using the RavenDB document database to store, index, and query the output produced by the Open Discover Platform API. In the study we use [RavenDB 5.1](https://ravendb.net/) as our document database. RavenDB 5.1 now allows for text attachments to be indexed; however, for this case study extracted text will be stored as a document record property and indexed. 
   - "eDiscovery Early Case Assessment (ECA) Proof of Concept" demo application (a C#/WPF application example with source code available to those that demo Open Discover Platform). From here on out we will refer to this demo application as the "ECA Demo App". This proof of concept demo app uses custom RavenDB indexes to query and display:
      - Summaries of a document counts, file types, file sizes
