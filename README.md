@@ -44,14 +44,9 @@ The PlatformAPIDemo.exe is distributed with the Open Discover Platform evaluatio
   - C# example that creates eDiscovery review system "load files" from Platform API output
   - Lucene full-text search indexing example (indexes text/metadata/sensitive items from Platform API output)
 
-In addition to the Open Discover Platform API offering, a 3rd party partner has developed a processing job management system (JMS) that manages distributed Platform API instances (and OCR worker instances) whether run on separate desktops, virtual machines, or Azure Docker containers. By using the JMS to manage distributed instances of the Platform API, customers can process terabytes of documents a day on just one 16-core server. If you are in the legal/eDiscovery/information governance industries (or if your company routinely processes large volumes of documents) and are interested in evaluating the JMS/Open Discover Platform then contact us at https://dotfurther.com/contact-us/.
+In a recent performance test, the Open Discover SDK processed the 53 GB Enron Microsoft Outlook PST dataset and bulk inserted the Platform API output (text/metadata/sensitive (PXI) items/etc) into RavenDB in a little over 30 minutes using a single 4-core Windows desktop PC. 
 
-In a recent performance test, the JMS processed the 53 GB Enron Microsoft Outlook PST dataset and bulk inserted the Platform API output (text/metadata/sensitive items/etc) into RavenDB in a little over 30 minutes on a 16-core Windows server. The JMS, 2 Platform API instances, 1 'worker' that bulk inserted task output into RavenDB, and RavenDB service were all running on the same 16-core server. That comes out to over 100+ GB/hour** processing rate just based on input document size and not expanded dataset size. 
-
-** This case study processing rate was for the .NET 4.62 version of SDK, the new .NET 5 version is > 100% faster on average, all the PST processing tasks on the .NET 5 version of OpenDiscoverPlatform processed their PST dataset tasks between 90-100+GB/hr rates (based on input size) WITH sensitive item detection enabled (processing rates are hardware dependent - in these numbers we used a single desktop PC with Intel i7 CPU and 16GB RAM).
-
-<img src="JMS_Diagram.png">
-
+** This case study processing rate was for the .NET 4.62 version of SDK, the new .NET 6 version is > 100% faster on average, all the PST processing tasks on the .NET 6 version of OpenDiscoverPlatform processed their PST dataset tasks between 90-100+GB/hr rates (based on input size) WITH sensitive item detection enabled (processing rates are hardware dependent - in these numbers we used a single desktop PC with Intel i7 CPU and 16GB RAM).
 
 ### Quick look at the types of content that Open Discover Platform API extracted from the Enron Microsoft Outlook PST dataset (i.e., the types of content which was bulk inserted into a RavenDB document store for each document):
 
