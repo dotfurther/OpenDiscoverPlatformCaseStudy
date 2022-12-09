@@ -144,7 +144,7 @@ Open Discover® Platform output stored in a document database such as RavenDB ca
 - Powerful full-text search (including metadata and sensitive/entity item field searches)
 - Information governance
 - eDiscovery
-- Data breach analysis
+- Incident Response (IR)/data breach analysis
 - Enterprise search and content management
 - Content management systems
 - IT Department applications - identify documents with sensitive information and/or that are redunant, obsolete, and trivial (ROT).
