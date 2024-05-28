@@ -1,5 +1,7 @@
 # Case Study: Use of Open Discover® Platform and RavenDB document store in eDiscovery Early Case Assessment (ECA). 
 
+## See https://github.com/dotfurther/Open-Discover-WhitePaper-1/ for a real world case study that demonstrates the latest distributed Workflow Management System (WMS) for distributed document processing and OCR.
+
 ## [ECA](https://en.wikipedia.org/wiki/Early_case_assessment) "refers to estimating risk to prosecute or defend a legal case. Global organizations deal with legal discovery and disclosure requests for electronically stored information "ESI" and paper documents on a regular basis." 
 
 ## Open Discover® Platform is a higher level of document content extraction/processing API built upon the Open Discover® SDK for .NET. 
